@@ -1,7 +1,7 @@
    [
    {
         "Id" : "0",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 60,
@@ -15,7 +15,7 @@
         "isApproved": false
     },
     {   "Id" : "1",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 70,
@@ -30,7 +30,7 @@
     },
     {
         "Id" : "2",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 80,
@@ -45,7 +45,7 @@
     },
     {
         "Id" : "3",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 90,
@@ -60,7 +60,7 @@
     },
     {
         "Id" : "4",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 100,
@@ -76,7 +76,7 @@
     },
     {
         "Id" : "5",
-        "Images":"../src/images/product-img.png",
+        "Images":"/product-img.png",
         "Product": "chicken brest",
         "Brand": "Hormel Black",
         "Price": 120,

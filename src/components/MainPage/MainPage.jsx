@@ -22,6 +22,7 @@ import { PiFlowerTulip } from "react-icons/pi";
 import { GiMeat } from "react-icons/gi";
 import { GiElephant } from "react-icons/gi";
 import { GiBurningTree } from "react-icons/gi";
+import data from '../../services/mock.json'
 
 
 
@@ -75,8 +76,7 @@ const editHandler=(ele,index)=>{
 
  
 useEffect(()=>{
-    axios.get('../../../services/mock.json')
-    .then((res)=>dispatch(addCart(res.data)))
+    dispatch(addCart(data))
 },[dispatch])  
 
 
