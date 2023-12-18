@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.above_main{
+    border: 1px solid #ccc;
+    margin: 1rem 4rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.above_main hr{
+    height: 4rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+}
+.supplyDetailsHead{
+    font-size: 1vw;
+    font-weight: bold;
+    color: #ccc;
+}
+.supplyDetailsMain{
+    font-weight: bold;
+    font-size: 1vw;
+    font-size: 14px;
+}
+.below_main{
+    border: 1px solid #ccc;
+    margin: 1rem 4rem;
+    padding: 1rem 2rem;
+    min-height: 60vh;
+}
+.leftMain_nav input{
+    border: none;
+    outline: none;
+}
+.leftMain_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.leftMain_nav{
+    border: 1px solid #ccc;
+    width: 18rem;
+    border-radius: 15px;
+    padding: 5px; 
+}
+
+.backBtn{
+    padding: 5px 13px;
+    border-radius: 13px;
+    border: 1px solid black;
+    background: #fff;
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+.printer{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightMain_nav{
+    display: flex;
+}
+.main_content{
+    border: 1px solid #fff;
+    min-height: 60vh;
+    margin-top: 1rem;
+}
+.btnOpt{
+    float: right;
+    cursor: pointer;
+}
+.btnOpt span{
+    padding-left: 10px;
+}
+.cross{
+    margin-left: 10px;
+}
+
+
+.approved{
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 7px;
+    color: #fff;
+    background: rgb(45, 156, 45);
+}
+.missing{
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 7px;
+    color: #fff;
+    background: rgb(194, 91, 91);
+}
+.UrgentMissing{
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 7px;
+    color: #fff;
+    background: rgb(214, 2, 2);
+}
+.arrow{
+    color: rgb(45, 156, 45);
+}
+.UM{
+    color: red;
+    margin-left: 10px;
+}
+.val{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: -10px;
+}
+.statusWd{
+    width: 30%;
+}
+.walImg{
+    width: 4vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* <---------media query-------> */
+
+
+
+@media only screen and (max-width: 822px){
+    .above_main{
+        display: flex;
+        flex-direction: column;        
+        min-height: 60vh;
+        width: 80vw;
+        font-weight: 10vh;
+    }
+    .hrMain{
+        transform: rotate(90deg);
+        display: none;
+    }
+    .supplyDetails{
+        display: flex;
+        min-width: 80vw;
+        justify-content: space-between;
+        padding: 0px 10px;
+        /* margin-top: -15px; */
+    }
+    .supplyDetailsHead{
+        font-size: 3vh;
+    }
+}
+@media only screen and (max-width:600px){
+    .below_main{
+        min-width: 80vw;
+    }
+    .leftMain_nav input{
+        min-width: 10vw;
+    }
+}
+@media only screen and (max-width:584px){
+    .main_nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightMain_nav{
+        margin-top: 20px;
+    }
+    .leftMain_nav{
+        width: 80%;
+    }
+    
+}

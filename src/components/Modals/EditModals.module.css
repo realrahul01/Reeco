@@ -1,0 +1,62 @@
+.modal_content{
+    border: none;
+}
+
+.modal_body{
+    border: none;
+    outline: none;
+}
+.modal_footer{
+    border: none;
+}
+.walnut{
+    width: 100px;
+    height: 100px;
+}
+.container{
+    display: flex;
+}
+.edit_rightContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+.btnPlus, .btnminus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgb(99, 207, 99);
+    border: none;
+    color: #fff;
+}
+.editMain{
+    text-align: center;
+}
+.editMain span{
+    margin: 0px 10px;
+    padding: 1px 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+.category span{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 3px 8px;
+    margin: 0px 4px;
+}
+.cancel{
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.send{
+    padding: 6px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-size: 14px;
+}
