@@ -1,8 +1,8 @@
-import { TfiShoppingCart } from "react-icons/tfi";
+import { TiShoppingCart } from "react-icons/ti";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
-import styles from './Header.module.css'
 // import { IoIosMenu } from "react-icons/io";
+import styles from './Header.module.css'
 import { GrMenu } from "react-icons/gr";
 import { useState } from "react";
 
@@ -33,7 +33,7 @@ const toggleHandler = ()=>{
             </div>
             <div className={styles.right_nav}>
                 <div className={styles.cartOpt}>
-                    <TfiShoppingCart />
+                    <TiShoppingCart />
                     <span>Hello,James</span>
                     <IoIosArrowDown />
                 </div>

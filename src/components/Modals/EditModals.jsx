@@ -10,20 +10,30 @@ import {useState} from 'react'
 function EditModals({HandleClose,product}) {   
 const [quantity, setQuantity] = useState(product.Quantity) 
 const ind = product.Id 
+console.log(ind)
 const dispatch = useDispatch()
+const pro = useSelector((state)=>state.cart.mock)
+console.log(pro)
+
 
 const incrementHandler=(index)=>{
   setQuantity(quantity + 1)
-  dispatch(increment(index))
+  // dispatch(increment(index))
   dispatch(quantityStatus(index))
 }
 
 const decrementHandler=(index)=>{
   if(quantity > 1){
     setQuantity(quantity - 1)
-    dispatch(decrement(index))
+    // dispatch(decrement(index))
     dispatch(priceUpdated(index))
   }
+}
+
+const saveHandler=(index)=>{
+  dispatch(increment({index,quantity}))
+  dispatch(decrement({index,quantity}))
+  HandleClose()
 }
 
 
@@ -73,8 +83,8 @@ const decrementHandler=(index)=>{
         </Modal.Body>
 
         <Modal.Footer className={styles.modal_footer}>
-          <button className={styles.cancel}>Cancel</button>
-          <button onClick={()=>HandleClose()} className={styles.send}>Send</button>
+          <button onClick={()=>HandleClose()} className={styles.cancel}>Cancel</button>
+          <button onClick={()=>saveHandler(ind)} className={styles.send}>Send</button>
         </Modal.Footer>
        
       </Modal>

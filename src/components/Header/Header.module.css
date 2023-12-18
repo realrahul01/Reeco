@@ -73,7 +73,6 @@
 .container{
     display: flex;
     justify-content: space-between;
-    min-height: 22vh;
 }
 .btn1{
     padding: 3px 16px;
@@ -157,6 +156,12 @@
     }
     .btn2{
         margin-top: 0.7rem;
+    }
+    .orderDt{
+       font-size: 5vh;
+    }
+    .container{
+        width: 70vw;
     }
 }
 

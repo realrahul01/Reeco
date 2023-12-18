@@ -51,17 +51,19 @@ export const cartSlice = createSlice({
             }
         },
        increment: (state,action)=>{
+        
         state.mock = state.mock.map((x)=>{
-            if(x.Id === action.payload){
-                return {...x, Quantity: x.Quantity + 1}
+            if(x.Id === action.payload.index){
+                console.log(action.payload.index)
+                return {...x, Quantity: action.payload.quantity}
             }
             return x
         })
        },
        decrement: (state,action)=>{
         state.mock = state.mock.map((x)=>{
-            if(x.Id === action.payload){
-                return {...x, Quantity: x.Quantity - 1}
+            if(x.Id === action.payload.index){
+                return {...x, Quantity: action.payload.quantity}
             }
             return x
         })
